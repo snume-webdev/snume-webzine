@@ -1,0 +1,11 @@
+// https://yeun.github.io/open-color/ingredients.html
+@import 'open-color/open-color.scss';
+
+// https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
+$break-small: 480px;
+$break-large: 840px;
+
+$main-text-color: $oc-gray-9;
+$light-text-color: $oc-gray-5;
+$link-color: $oc-blue-5;
+$latex-color: $main-text-color;

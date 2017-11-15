@@ -84,5 +84,6 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+  sourceMap: true
   includePaths:
     - node_modules/
