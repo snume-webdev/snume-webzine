@@ -6,6 +6,7 @@
     "version": "3.4.0"
   },
   "scripts": {
+    "draft": "hexo clean && hexo server --draft",
     "server": "hexo clean && hexo server",
     "deploy": "hexo deploy"
   },
