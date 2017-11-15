@@ -7,4 +7,4 @@
 each post in posts
   div
     span= date(post.date, 'YYYY-M-D')
-    a(href=post.path)= post.title
+    a(href=url_for(post.path))= post.title
