@@ -12,9 +12,15 @@
   }
 }
 
-
 @mixin octicon {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
+}
+
+@mixin link-style {
+  &, &:visited, &:active, &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
 }

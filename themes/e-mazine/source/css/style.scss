@@ -2,6 +2,31 @@
 @import './variables';
 @import './mixins';
 
+/*
+반응형 믹스인!
+
+@include respond-to(handhelds) {
+}
+@include respond-to(medium-screens) {
+}
+@include respond-to(wide-screens) {
+}
+*/
+
+@mixin main-spacer {
+  margin-left: auto;
+  margin-right: auto;
+  @include respond-to(handhelds) {
+    padding: 0 15px;
+  }
+  @include respond-to(medium-screens) {
+    padding: 0 20px;
+  }
+  @include respond-to(wide-screens) {
+    max-width: 800px;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,33 +35,103 @@ html, body {
   // text-align: justify;
   line-height: 1.8;
   vertical-align: middle;
-}
-
-.article {
-  margin: 0 auto;
-  color: $main-text-color;
-  // word-break: keep-all; // 단어 단위로 줄바꿈 하고 싶은 경우 주석 해제
   @include respond-to(handhelds) {
-    padding: 0 15px;
     font-size: 14px;
   }
   @include respond-to(medium-screens) {
-    padding: 0 20px;
     font-size: 16px;
   }
   @include respond-to(wide-screens) {
-    max-width: 800px;
+    font-size: 18px;
+  }
+}
+
+.topnav {
+  $height: 3rem;
+  height: $height;
+  border-bottom: 1px solid $main-border-color;
+  @include respond-to(handhelds) {
+    margin-bottom: 5rem;
+  }
+  @include respond-to(medium-screens) {
+    margin-bottom: 1.5rem;
+  }
+  @include respond-to(wide-screens) {
+    margin-bottom: 1.5rem;
+  }
+  &__logo {
+    display: block;
+    float: left;
+    background-image: url('../images/emazine_blue.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    $image-height: 295;
+    $image-width: 516;
+    @include respond-to(handhelds) {
+      margin-left: 20px;
+      margin-top: 15px;
+      height: $image-height * 0.018rem;
+      width: $image-width * 0.018rem;
+    }
+    @include respond-to(medium-screens) {
+      margin-left: 20px;
+      margin-top: 15px;
+      height: $image-height * 0.018rem;
+      width: $image-width * 0.018rem;
+    }
+    @include respond-to(wide-screens) {
+      margin-left: 20px;
+      margin-top: 15px;
+      height: $image-height * 0.018rem;
+      width: $image-width * 0.018rem;
+    }
+  }
+  &__links {
+    float: right;
+    a {
+      display: inline-block;
+      line-height: $height;
+      vertical-align: middle;
+      margin-right: 2rem;
+      &, &:visited, &:active, &:hover {
+        color: $light-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.article {
+  color: $main-text-color;
+  // word-break: keep-all; // 단어 단위로 줄바꿈 하고 싶은 경우 주석 해제
+  @include main-spacer;
+  @include respond-to(handhelds) {
+    font-size: 14px;
+  }
+  @include respond-to(medium-screens) {
+    font-size: 16px;
+  }
+  @include respond-to(wide-screens) {
     font-size: 18px;
   }
   &__title {
-    margin-top: 0.2em;
-    font-size: 2em;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    line-height: 1.3;
     text-align: center;
     word-break: keep-all;
   }
   &__categories {
+    text-align: right;
+    margin-bottom: 1rem;
     &__icon {
-      margin-right: 0.2em;
+      margin-right: 0.2rem;
     }
     ul {
       list-style: none;
@@ -49,7 +144,7 @@ html, body {
     }
     a.article__categories-list-link {
       font-size: 0.8em !important;
-      margin-right: 1em;
+      margin-right: 1rem;
       &, &:visited, &:active, &:hover {
         color: $light-text-color;
       }
@@ -73,15 +168,12 @@ html, body {
   }
 
   a {
-    &, &:visited, &:active, &:hover {
-      color: $link-color;
-      text-decoration: none;
-    }
+    @include link-style;
   }
 
   p {
-    text-indent: 1em;
-    letter-spacing: 0.03em;
+    text-indent: 1rem;
+    letter-spacing: 0.03rem;
   }
 
   .katex-display > .katex {
@@ -96,13 +188,13 @@ html, body {
     color: $latex-color;
   }
   .katex {
-    margin-left: 0.1em;
-    margin-right: 0.1em;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
   }
   .katex-display {
-    margin-top: 0em;
-    padding-top: 1em;
-    margin-bottom: -1em;
+    margin-top: 0rem;
+    padding-top: 1rem;
+    margin-bottom: -1rem;
   }
   .footnote {
     &__list {
@@ -111,6 +203,42 @@ html, body {
     }
     &__index {
       color: $light-text-color;
+    }
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  overflow: hidden;
+  border-top: 1px solid $main-border-color;
+  background-color: $footer-bg-color;
+  a {
+    @include link-style;
+  }
+  &__inner {
+    @include main-spacer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__logo {
+    margin-bottom: 1rem;
+    $logo-width: 1608;
+    $logo-height: 250;
+    text-indent: -9999px;
+    width: $logo-width * 0.01rem;
+    height: $logo-height * 0.01rem;
+    background-image: url('../images/footer_main.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    &__block {
+      display: inline-block;
+      margin-right: 0.5rem;
     }
   }
 }
