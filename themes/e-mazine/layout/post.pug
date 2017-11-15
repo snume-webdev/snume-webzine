@@ -1,13 +1,1 @@
-- function transformCategoryName1(name) { return `<i class="article__categories__icon octicon octicon-file-directory"></i>${name}` }
-
-article.article(id=`${page.layout}-${page.slug}`, class=page.layout)
-  header
-    if page.categories && page.categories.length
-      div.article__categories !{list_categories(page.categories, {show_count: false, class: 'article__categories', transform: transformCategoryName1})}
-    h1.article__title= page.title
-    if page.author
-      p.author
-        span.author__name= page.author.name
-        if page.author.title
-          span.author__title= page.author.title
-  main.content !{page.content}
+include _post.pug
