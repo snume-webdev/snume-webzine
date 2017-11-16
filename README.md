@@ -6,7 +6,7 @@
 
 # 실행 및 글 작성
 
-- 초안을 작성하려면 터미널에서 `npm run draft` 실행 후 `source/_drafts` 폴더에 글을 작성
+- 초안을 작성하려면 터미널에서 `npm run draft` 실행 후, 코드에디터에서 새로운 파일(확장자 md)를 `source/_drafts` 폴더에 생성 후 글을 작성
 - 초안이 작성되었으면 해당 파일을 `source/_posts` 폴더로 이동
 - 초안을 제외한 웹사이트를 보고 싶으면 `npm run server` 명령 실행
 
