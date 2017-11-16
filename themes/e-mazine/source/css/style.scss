@@ -171,6 +171,12 @@ html, body {
     @include link-style;
   }
 
+  p img {
+    display: block;
+    max-width: 100%;
+    margin: 2em auto;
+  }
+
   p {
     text-indent: 1rem;
     letter-spacing: 0.03rem;
