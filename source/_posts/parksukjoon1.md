@@ -74,10 +74,10 @@ author:
 
 ## 4. 참고문헌
 
-김남희 외 5인(2006). 예비교사와 현직교사를 위한 수학 교육과정과 교재연구. 경문사.
-우정호(1998). 학교 수학의 교육적 기초. 서울대학교출판부.
-황혜정 외 5인(2001). 수학교육학신론. 문음사.
-Anne Watson, John Mason(2005). Mathematics as a constructive activity: Learners Generating Examples. New York: Routledge.
-Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. New York: Plenum.
-Murray, H. A. (1938). Explorations in personality. New York: Oxford University Press.
-Hall, C. S., & Lindzey, G. (1978). Theories of Personality, New York: Wiley
+- 김남희 외 5인(2006). 예비교사와 현직교사를 위한 수학 교육과정과 교재연구. 경문사.
+- 우정호(1998). 학교 수학의 교육적 기초. 서울대학교출판부.
+- 황혜정 외 5인(2001). 수학교육학신론. 문음사.
+- Anne Watson, John Mason(2005). Mathematics as a constructive activity: Learners Generating Examples. New York: Routledge.
+- Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. New York: Plenum.
+- Murray, H. A. (1938). Explorations in personality. New York: Oxford University Press.
+- Hall, C. S., & Lindzey, G. (1978). Theories of Personality, New York: Wiley
