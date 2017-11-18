@@ -115,7 +115,7 @@ hr {
 
 .main {
   background-color: $main-bg-color;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   @include respond-to(handhelds) {
     padding-top: 5rem;
   }
