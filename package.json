@@ -29,6 +29,7 @@
     "normalize.css": "^7.0.0",
     "object-assign": "^4.1.1",
     "open-color": "^1.5.1",
-    "strip-indent": "^2.0.0"
+    "strip-indent": "^2.0.0",
+    "uglify-js": "~>2.6.0"
   }
 }
