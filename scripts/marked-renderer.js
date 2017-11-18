@@ -166,13 +166,12 @@ function renderFootnotes(text) {
   // render footnotes (HTML)
   footnotes.forEach(function(footNote) {
     html += '<li class="footnote__item" id="fn:' + footNote.index + '">';
-    html += '<span class="footnote__index" style="padding-right: 3px;">';
+    html += '<a class="footnote__index" href="#fnref:' + footNote.index + '" rev="footnote">';
     html += footNote.index;
-    html += '.</span>';
-    html += '<span class="footnote__ style="">';
+    html += '.</a>';
+    html += '<span class="footnote__content">';
     html += footNote.content.trim();
     html += '</span>';
-    // html += ' <a href="#fnref:' + footNote.index + '" rev="footnote">↩</a>';
     html += '</li>';
   });
   // add footnotes at the end of the content
