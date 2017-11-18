@@ -252,7 +252,7 @@ hr {
   .post-list__item {
     display: flex; }
     .post-list__item__date {
-      min-width: 5.6rem;
+      min-width: 10ch;
       color: #adb5bd;
       margin-right: 0em; }
     .post-list__item__title {
@@ -274,3 +274,18 @@ hr {
   @media only screen and (min-width: 840px) {
     .category-page__title {
       max-width: 800px; } }
+
+.heroArea {
+  background-image: url("../images/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 480px) {
+    .heroArea {
+      height: 300px; } }
+  @media only screen and (min-width: 481px) and (max-width: 839px) {
+    .heroArea {
+      height: 500px; } }
+  @media only screen and (min-width: 840px) {
+    .heroArea {
+      height: 800px; } }
