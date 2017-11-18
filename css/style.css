@@ -138,6 +138,10 @@ html, body {
   .article a, .article a:visited, .article a:active, .article a:hover {
     color: #329af0;
     text-decoration: none; }
+  .article p img {
+    display: block;
+    max-width: 100%;
+    margin: 2em auto; }
   .article p {
     text-indent: 1rem;
     letter-spacing: 0.03rem; }
