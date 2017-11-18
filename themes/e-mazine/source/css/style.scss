@@ -300,7 +300,7 @@ hr {
   &__item {
     display: flex;
     &__date {
-      min-width: 5.6rem;
+      min-width: 10ch;
       color: $light-text-color;
       margin-right: 0em;
     }
@@ -316,4 +316,20 @@ hr {
     @include main-spacer;
     font-size: 2em;
   }
+}
+
+.heroArea {
+  @include respond-to(handhelds) {
+    height: 300px;
+  }
+  @include respond-to(medium-screens) {
+    height: 500px;
+  }
+  @include respond-to(wide-screens) {
+    height: 800px;
+  }
+  background-image: url('../images/hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

@@ -13,6 +13,8 @@ html(lang="en")
     | !{open_graph()}
 
   body
+    if is_home()
+      .heroArea
     include _topnav.pug
     .main !{body}
     include _footer.pug
