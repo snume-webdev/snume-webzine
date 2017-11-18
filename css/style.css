@@ -11,11 +11,11 @@
 }
 */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: #f1f3f5;
+  color: #212529;
   line-height: 1.7;
   vertical-align: middle; }
   @media only screen and (max-width: 480px) {
@@ -27,14 +27,6 @@ html, body {
   @media only screen and (min-width: 840px) {
     html, body {
       font-size: 18px; } }
-
-body {
-  display: flex;
-  flex-direction: column;
-  color: #212529; }
-
-.main {
-  flex: 1 0 auto; }
 
 h1, h2, h3, h4 {
   word-break: keep-all; }
@@ -48,16 +40,8 @@ hr {
 
 .topnav {
   height: 3rem;
-  border-bottom: 1px solid #dee2e6; }
-  @media only screen and (max-width: 480px) {
-    .topnav {
-      margin-bottom: 5rem; } }
-  @media only screen and (min-width: 481px) and (max-width: 839px) {
-    .topnav {
-      margin-bottom: 1.5rem; } }
-  @media only screen and (min-width: 840px) {
-    .topnav {
-      margin-bottom: 1.5rem; } }
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff; }
   .topnav__logo {
     display: block;
     float: left;
@@ -97,6 +81,19 @@ hr {
     display: table;
     content: '';
     clear: both; }
+
+.main {
+  background-color: #fff;
+  padding-bottom: 4rem; }
+  @media only screen and (max-width: 480px) {
+    .main {
+      padding-top: 5rem; } }
+  @media only screen and (min-width: 481px) and (max-width: 839px) {
+    .main {
+      padding-top: 1.5rem; } }
+  @media only screen and (min-width: 840px) {
+    .main {
+      padding-top: 1.5rem; } }
 
 .article {
   margin-left: auto;
@@ -194,7 +191,6 @@ hr {
     color: #adb5bd; }
 
 .footer {
-  margin-top: 4rem;
   overflow: hidden;
   border-top: 1px solid #dee2e6;
   background-color: #f1f3f5; }
