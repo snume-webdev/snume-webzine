@@ -10,13 +10,8 @@
 @include respond-to(wide-screens) {
 }
 */
-h1, h2, h3, h4 {
-  word-break: keep-all; }
-
-h5, h6 {
-  display: none; }
-
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -32,6 +27,24 @@ html, body {
   @media only screen and (min-width: 840px) {
     html, body {
       font-size: 18px; } }
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #212529; }
+
+.main {
+  flex: 1 0 auto; }
+
+h1, h2, h3, h4 {
+  word-break: keep-all; }
+
+h5, h6 {
+  display: none; }
+
+hr {
+  border: none;
+  border-top: 1px solid #dee2e6; }
 
 .topnav {
   height: 3rem;
@@ -86,7 +99,6 @@ html, body {
     clear: both; }
 
 .article {
-  color: #212529;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (max-width: 480px) {
@@ -114,21 +126,22 @@ html, body {
     text-align: center; }
   .article__categories {
     text-align: right;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-right: -1rem; }
     .article__categories__icon {
       margin-right: 0.2rem; }
-    .article__categories ul {
+    .article__categories-list, .article__categories-list-child {
       list-style: none;
       padding: 0;
       margin: 0;
       display: inline; }
-    .article__categories li {
+    .article__categories-list-item {
       display: inline; }
-    .article__categories a.article__categories-list-link {
+    .article__categories-list-link {
       font-size: 0.8em !important;
       margin-right: 1rem; }
-      .article__categories a.article__categories-list-link, .article__categories a.article__categories-list-link:visited, .article__categories a.article__categories-list-link:active, .article__categories a.article__categories-list-link:hover {
-        color: #adb5bd; }
+      .article__categories-list-link, .article__categories-list-link:visited, .article__categories-list-link:active, .article__categories-list-link:hover {
+        color: #adb5bd !important; }
   .article .author {
     text-align: right;
     color: #adb5bd; }
@@ -157,9 +170,6 @@ html, body {
     padding-left: 1rem; }
     .article blockquote p {
       text-indent: 0; }
-  .article hr {
-    border: none;
-    border-top: 1px solid #dee2e6; }
   .article .katex-display > .katex {
     max-width: 100%;
     overflow-x: scroll;
@@ -178,7 +188,8 @@ html, body {
     margin-bottom: -1rem; }
   .article .footnote__list {
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    letter-spacing: 0.03rem; }
   .article .footnote__index {
     color: #adb5bd; }
 
@@ -220,3 +231,50 @@ html, body {
     .footer__info__block {
       display: inline-block;
       margin-right: 0.5rem; }
+
+.octicon {
+  font-size: 1em;
+  vertical-align: 0%;
+  line-height: inherit; }
+
+.post-list {
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 480px) {
+    .post-list {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 481px) and (max-width: 839px) {
+    .post-list {
+      padding: 0 20px; } }
+  @media only screen and (min-width: 840px) {
+    .post-list {
+      max-width: 800px; } }
+  .post-list__year-divider__icon {
+    margin-right: 0.2em; }
+  .post-list__category-divider__icon {
+    margin-right: 0.2em; }
+  .post-list__item {
+    display: flex; }
+    .post-list__item__date {
+      min-width: 5.6rem;
+      color: #adb5bd;
+      margin-right: 0em; }
+    .post-list__item__title {
+      word-break: keep-all; }
+      .post-list__item__title, .post-list__item__title:visited, .post-list__item__title:active, .post-list__item__title:hover {
+        color: #329af0;
+        text-decoration: none; }
+
+.category-page__title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em; }
+  @media only screen and (max-width: 480px) {
+    .category-page__title {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 481px) and (max-width: 839px) {
+    .category-page__title {
+      padding: 0 20px; } }
+  @media only screen and (min-width: 840px) {
+    .category-page__title {
+      max-width: 800px; } }
