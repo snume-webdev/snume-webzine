@@ -14,11 +14,11 @@
 */
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: $footer-bg-color;
+  color: $main-text-color;
   // text-align: justify;
   line-height: 1.7;
   vertical-align: middle;
@@ -31,16 +31,6 @@ html, body {
   @include respond-to(wide-screens) {
     font-size: 18px;
   }
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  color: $main-text-color;
-}
-
-.main {
-  flex: 1 0 auto;
 }
 
 h1, h2, h3, h4 {
@@ -74,15 +64,7 @@ hr {
   $height: 3rem;
   height: $height;
   border-bottom: 1px solid $main-border-color;
-  @include respond-to(handhelds) {
-    margin-bottom: 5rem;
-  }
-  @include respond-to(medium-screens) {
-    margin-bottom: 1.5rem;
-  }
-  @include respond-to(wide-screens) {
-    margin-bottom: 1.5rem;
-  }
+  background-color: $main-bg-color;
   &__logo {
     display: block;
     float: left;
@@ -128,6 +110,20 @@ hr {
     display: table;
     content: '';
     clear: both;
+  }
+}
+
+.main {
+  background-color: $main-bg-color;
+  padding-bottom: 4rem;
+  @include respond-to(handhelds) {
+    padding-top: 5rem;
+  }
+  @include respond-to(medium-screens) {
+    padding-top: 1.5rem;
+  }
+  @include respond-to(wide-screens) {
+    padding-top: 1.5rem;
   }
 }
 
@@ -248,7 +244,6 @@ hr {
 }
 
 .footer {
-  margin-top: 4rem;
   overflow: hidden;
   border-top: 1px solid $main-border-color;
   background-color: $footer-bg-color;
