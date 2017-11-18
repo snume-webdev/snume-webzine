@@ -3,7 +3,7 @@
 title: 17학번의 1학기 소감
 date: 2017/10/13 20:46:25
 categories:
-  - 기타
+  - [기타]
 author:
   name: 김석범
   title: ???

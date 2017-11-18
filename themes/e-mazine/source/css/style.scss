@@ -13,29 +13,8 @@
 }
 */
 
-h1, h2, h3, h4 {
-  word-break: keep-all;
-}
-
-h5, h6 {
-  display: none;
-}
-
-@mixin main-spacer {
-  margin-left: auto;
-  margin-right: auto;
-  @include respond-to(handhelds) {
-    padding: 0 15px;
-  }
-  @include respond-to(medium-screens) {
-    padding: 0 20px;
-  }
-  @include respond-to(wide-screens) {
-    max-width: 800px;
-  }
-}
-
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -51,6 +30,43 @@ html, body {
   }
   @include respond-to(wide-screens) {
     font-size: 18px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: $main-text-color;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4 {
+  word-break: keep-all;
+}
+
+h5, h6 {
+  display: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $main-border-color;
+}
+
+@mixin main-spacer {
+  margin-left: auto;
+  margin-right: auto;
+  @include respond-to(handhelds) {
+    padding: 0 15px;
+  }
+  @include respond-to(medium-screens) {
+    padding: 0 20px;
+  }
+  @include respond-to(wide-screens) {
+    max-width: 800px;
   }
 }
 
@@ -116,7 +132,6 @@ html, body {
 }
 
 .article {
-  color: $main-text-color;
   // word-break: keep-all; // 단어 단위로 줄바꿈 하고 싶은 경우 주석 해제
   @include main-spacer;
   @include respond-to(handhelds) {
@@ -137,23 +152,24 @@ html, body {
   &__categories {
     text-align: right;
     margin-bottom: 1rem;
+    margin-right: -1rem;
     &__icon {
       margin-right: 0.2rem;
     }
-    ul {
+    &-list, &-list-child {
       list-style: none;
       padding: 0;
       margin: 0;
       display: inline;
     }
-    li {
+    &-list-item {
       display: inline;
     }
-    a.article__categories-list-link {
+    &-list-link {
       font-size: 0.8em !important;
       margin-right: 1rem;
       &, &:visited, &:active, &:hover {
-        color: $light-text-color;
+        color: $light-text-color !important;
       }
     }
   }
@@ -199,11 +215,6 @@ html, body {
     }
   }
 
-  hr {
-    border: none;
-    border-top: 1px solid $main-border-color;
-  }
-
   .katex-display > .katex {
     max-width: 100%;
     overflow-x: scroll;
@@ -228,6 +239,7 @@ html, body {
     &__list {
       list-style: none;
       padding-left: 0;
+      letter-spacing: 0.03rem;
     }
     &__index {
       color: $light-text-color;
@@ -268,5 +280,45 @@ html, body {
       display: inline-block;
       margin-right: 0.5rem;
     }
+  }
+}
+
+.octicon {
+  font-size: 1em;
+  vertical-align: 0%;
+  line-height: inherit;
+}
+
+.post-list {
+  @include main-spacer;
+  &__year-divider {
+    // color: $light-text-color;
+    &__icon {
+      margin-right: 0.2em;
+    }
+  }
+  &__category-divider {
+    &__icon {
+      margin-right: 0.2em;
+    }
+  }
+  &__item {
+    display: flex;
+    &__date {
+      min-width: 5.6rem;
+      color: $light-text-color;
+      margin-right: 0em;
+    }
+    &__title {
+      @include link-style;
+      word-break: keep-all;
+    }
+  }
+}
+
+.category-page {
+  &__title {
+    @include main-spacer;
+    font-size: 2em;
   }
 }

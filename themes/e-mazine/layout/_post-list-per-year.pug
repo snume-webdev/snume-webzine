@@ -1,0 +1,19 @@
+-
+  var posts = []
+  page.posts.each(function (post){
+    posts.push(post)
+  })
+
+.post-list
+  - let first = true;
+  - let year = null;
+  each post in posts
+    if year !== post.date.year()
+      if !first
+        hr
+      div.post-list__year-divider
+        span.post-list__year-divider__icon.octicon.octicon-calendar
+        span= post.date.year()
+    - year = post.date.year();
+    - first = false;
+    | !{partial('_post-list-item.pug', {post: post})}

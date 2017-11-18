@@ -1,0 +1,3 @@
+.post-list__item
+  span.post-list__item__date= date(post.date, 'YYYY-M-D')
+  a.post-list__item__title(href=url_for(post.path))= post.title

@@ -1,1 +1,21 @@
-p 1
+-
+  const categoryMap = {};
+  site.categories.sort('name').map(category => {
+    category.posts.sort('title').map(post => {
+      const postList = categoryMap[category.name] = categoryMap[category.name] || [];
+      postList.push(post)
+    })
+  });
+.archive-wrap
+  .post-list
+    - let first = true;
+    each entry in Object.entries(categoryMap)
+      if !first
+        hr.post-list__hr
+      - first = false
+      - const [categoryName, postList] = entry;
+      div.post-list__category-divider
+        span.post-list__category-divider__icon.octicon.octicon-file-directory
+        span.post-list__category-divier__name= categoryName
+      each post in postList
+        div!= partial('_post-list-item.pug', {post: post})

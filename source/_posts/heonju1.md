@@ -2,7 +2,7 @@
 title: 학생들의 오개념, 산술기하 부등식에서
 date: 2017/10/13 20:46:25
 categories:
-  - 수학 교실
+  - [수학 교실]
 author:
   name: 신헌주
   title: ???

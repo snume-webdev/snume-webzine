@@ -1,10 +1,1 @@
--
-  var posts = []
-  page.posts.each(function (post){
-    posts.push(post)
-  })
-
-each post in posts
-  div
-    span= date(post.date, 'YYYY-M-D')
-    a(href=url_for(post.path))= post.title
+include _post-list-per-year
