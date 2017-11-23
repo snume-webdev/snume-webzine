@@ -3,9 +3,9 @@ title: 데카르트와 차별
 date: 2017/10/13 20:46:25
 categories:
   - [수학자 이야기]
-author:
-  name: 최준호
-  title: ???
+authors:
+  - name: 최준호
+    title: ???
 ---
 
 **차별 : 둘 이상의 대상을 각각 등급이나 수준 따위의 차이를 두어서 구별함.**

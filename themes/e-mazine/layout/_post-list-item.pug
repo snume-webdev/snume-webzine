@@ -2,5 +2,5 @@
   span.post-list__item__date= date(post.date, 'YYYY-M-D')
   a.post-list__item__title(href=url_for(post.path))
     span= post.title
-    if post.author
-      span  - #{post.author.name}
+    if post.authors
+      span= ` - ${post.authors[0].name}${post.authors.length > 1 ? ` 외 ${post.authors.length - 1}명` : ''}`

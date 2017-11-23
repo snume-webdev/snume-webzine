@@ -5,9 +5,9 @@ date: 2017/10/10 20:46:25
 categories:
   - [수학 교구 및 공학 도구]
   - [수학 교실]
-author:
-  name: 이용찬
-  title: ???
+authors:
+  - name: 이용찬
+    title: ???
 
 ---
 

@@ -5,9 +5,11 @@ article.article
     if page.categories && page.categories.length
       div.article__categories !{list_categories(page.categories, {show_count: false, class: 'article__categories', transform: transformCategoryName1})}
     h1.article__title= page.title
-    if page.author
-      p.author
-        span.author__name= page.author.name
-        if page.author.title
-          span.author__title= page.author.title
+    if page.authors
+      .author
+        each author in page.authors
+          .author__item
+            span.author__name= author.name
+            if author.title
+              span.author__title= author.title
   main.content !{page.content}
