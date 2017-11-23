@@ -13,3 +13,5 @@ article.article
             if author.title
               span.author__title= author.title
   main.content !{page.content}
+  if page.date
+    .date= `작성일: ${date(page.date)}`
