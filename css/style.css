@@ -164,7 +164,8 @@ hr {
     border-left: 3px solid #dee2e6;
     color: #adb5bd;
     font-style: italic;
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    margin-left: 1rem; }
     .article blockquote p {
       text-indent: 0; }
   .article .katex-display > .katex {
@@ -189,6 +190,9 @@ hr {
     letter-spacing: 0.03rem; }
   .article .footnote__index {
     padding-right: 0.2rem; }
+  .article .date {
+    text-align: right;
+    color: #adb5bd; }
 
 .footer {
   overflow: hidden;
@@ -260,6 +264,26 @@ hr {
       .post-list__item__title, .post-list__item__title:visited, .post-list__item__title:active, .post-list__item__title:hover {
         color: #329af0;
         text-decoration: none; }
+
+.category-list {
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 480px) {
+    .category-list {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 481px) and (max-width: 839px) {
+    .category-list {
+      padding: 0 20px; } }
+  @media only screen and (min-width: 840px) {
+    .category-list {
+      max-width: 800px; } }
+  .category-list__item {
+    display: block; }
+    .category-list__item, .category-list__item:visited, .category-list__item:active, .category-list__item:hover {
+      color: #329af0;
+      text-decoration: none; }
+    .category-list__item__icon {
+      margin-right: 0.2em; }
 
 .category-page__title {
   margin-left: auto;
