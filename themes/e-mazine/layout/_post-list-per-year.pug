@@ -1,8 +1,5 @@
 -
-  var posts = []
-  page.posts.each(function (post){
-    posts.push(post)
-  })
+  var posts = page.posts.toArray()
 
 .post-list
   - let first = true;

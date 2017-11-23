@@ -316,6 +316,17 @@ hr {
   }
 }
 
+.category-list {
+  @include main-spacer;
+  &__item {
+    @include link-style;
+    display: block;
+    &__icon {
+      margin-right: 0.2em;
+    }
+  }
+}
+
 .category-page {
   &__title {
     @include main-spacer;

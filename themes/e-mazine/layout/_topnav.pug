@@ -1,6 +1,6 @@
 nav.topnav
   a.topnav__logo(href=url_for('/'))
   div.topnav__links
-    a(href=url_for('/archives')) 카테고리
+    a(href=url_for(site.categories.toArray()[0].path)) 카테고리
     a(href=url_for('/about')) 소개
 

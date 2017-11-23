@@ -1,3 +1,10 @@
+.category-list
+  each cat in site.categories.toArray()
+    a.category-list__item(href=url_for(cat.path))
+      span.category-list__item__icon.octicon.octicon-file-directory
+      span= cat.name
+  hr
+
 .category-page
   .category-page__title= page.category
   include _post-list-per-year
