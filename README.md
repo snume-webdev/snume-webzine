@@ -12,7 +12,11 @@
 
 # 배포
 
-`npm run deploy` 명령 실행 (저장소 푸시 권한 필요)
+GitHub의 `master` 브랜치에 새로운 내용이 추가되면 `https://www.e-mazine.org`에 자동으로 반영됩니다.
+
+![netlify](./netlify.png)
+
+GitHub에 pull request를 생성하면 위와 같이 해당 브랜치에 대한 사이트가 뜹니다. 이 사이트를 통해 팀원 간에 실제로 어떤 변경사항이 있었는지 공유하세요.
 
 # 글 작성 시 주의사항
 
