@@ -12,7 +12,7 @@
 
 # 배포
 
-`npm run deploy` 명령 실행 (저장소 푸시 권한 필요)
+GitHub의 `master` 브랜치에 새로운 내용이 추가되면 `https://www.e-mazine.org`에 자동으로 반영됩니다.
 
 # 글 작성 시 주의사항
 
