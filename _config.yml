@@ -74,12 +74,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: e-mazine
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:snume-webdev/snume-webzine.git
-
 node_sass:
   outputStyle: nested
   precision: 5
