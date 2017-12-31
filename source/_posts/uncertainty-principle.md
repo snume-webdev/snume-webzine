@@ -29,5 +29,9 @@ $$ H(|b_t|^2) + H(|\hat{b_t}|^2) = 2tH(|\hat{a_t}|^2)  \approx 5.28 \ \forall t 
 $$H(|f|^2) + H(|\hat{f}|^2) \geq K $$
 를 떠올릴 수 있습니다. 저러한 상수 $K$는 임의의 리군, 그리고 임의의 양자공간마다 항상 존재할까요? 리군, 양자공간에 의존하지 않는 상수로서 존재할까요? 혹은 어떤 양자공간에 대해서는 없을 수도 있지 않을까요? 문제를 해결하셔서 미래에 "불확정성 원리를 만족하지 않는 특정 양자상태"와 같은 제목으로 논문을 게재해보세요.
 
+
+
+[^1]: Alagic, G., Russell, A. (2008). Uncertainty principles for compact groups. Illinois Journal of Mathematics, 52(4), 1315-1324.
 [^2]: Beckner, W. (1975). Inequalities in Fourier analysis. Annals of Mathematics, 159-182.
+[^3]: Crann, J., Kalantar, M. (2014). An uncertainty principle for unimodular quantum groups. Journal of Mathematical Physics, 55(8), 081704.
 [^4]: Hirschman, I. I. (1957). A note on entropy. American journal of mathematics, 79(1), 152-156.
