@@ -92,7 +92,7 @@ $$0.999 \cdots = 1$$
 그렇게 미분법이 개발된지 100여년만에 **코시**와 **바이어슈트라스**등에 의해 미적분학이 엄밀함을 가지게되었고, 그 과정에서 **무한소**는 없는 수가 되어버렸습니다.
 
 그렇게 무한소는 사라지는 듯 하였으나, **로빈슨(Abaraham Robinson)**이라는 학자가 무한소의 개념이 포함된 **비표준 해석학(Nonstandard Analyis)**을 제시합니다. Medvedev[^5]라는 학자는 비표준 해석학에 대해 이렇게 표현했습니다.
-**바이어슈트라스 해석학에서 없어졌던 무한소의 개념이 시민권(citizenship)을 되찾았다.**
+**"바이어슈트라스 해석학에서 없어졌던 무한소의 개념이 시민권(citizenship)을 되찾았다."**
 
 ## 비표준 해석학(Nonstandard Analysis)
 
@@ -126,4 +126,4 @@ $$0.999 \cdots = 1$$
 [^4]: Keisler, H. J. (1976). Foundations of infinitesimal calculus (Vol. 20). Boston: Prindle, Weber & Schmidt.
 [^5]: Medvedev, F. A., & Shenitzer, A. (1998). Nonstandard analysis and the history of classical analysis. The American mathematical monthly, 105(7), 659-664.
 [^6]: Ponstein, J. (2001). Nonstandard analysis: A Naive Way to the Infinitesimals (an unorthodox treatment of Nonstandard Analysis). Universiteitsbibliotheek Rijksuniversiteit Groningen.
-[^7]: http://blog.naver.com/PostView.nhn?blogId=hunterblack&logNo=220710549168&parentCategoryNo=35&categoryNo=&viewDate=&isShowPopularPosts=true&from=search
+[^7]: [비표준 해석학에 대해 상당히 자세히 서술해주신 블로그 글 입니다.](http://blog.naver.com/PostView.nhn?blogId=hunterblack&logNo=220710549168&parentCategoryNo=35&categoryNo=&viewDate=&isShowPopularPosts=true&from=search)
