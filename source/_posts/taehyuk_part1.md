@@ -218,7 +218,7 @@ $$x^{3}=15x+4$$
 [^2]: 칼 B. 보이어, 유타 C. 메르츠바흐, 수학의 역사(하), 경문사, 2013.
 [^3]: 이스라엘 클라이너, 추상대수학의 역사, 경문사, 2012.
 [^4]: 티모시 가워스, 준 배로우-그린, 임레 리더 외, The Princeton Companion to Mathematics I, 승산, 2014.
-[^5]: The MacTutor History of Mathematics archieve, http://www-history.mcs.stand.ac.uk/index.html, 2015. : 각 시대별, 주제별 수학사에 대한 정보를 얻을 수 있다.
+[^5]: The MacTutor History of Mathematics archieve, http://www-history.mcs.stand.ac.uk/index.html, 2015. 
 [^6]: Benjamin Fine, Gerhard Rosenberger, The Fundamental Theorem of Algebra,Springer, 1997.
 [^7]: Serge Lang, Algebra, Springer, 2002.
 [^8]: 김남희 외 5인, 수학교재과정과 교육 연구, 경문사, 2011.
