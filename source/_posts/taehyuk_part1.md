@@ -1,6 +1,6 @@
 ---
 title: 대수학(Algebra)의 역사 Part 1.
-date: 2017/10/13
+date: 2017/07/21
 categories:
   - [수학사]
 authors:

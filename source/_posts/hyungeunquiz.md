@@ -1,6 +1,6 @@
 ---
 title: 2018년을 맞이하며 풀어보는 퍼즐
-date: 2017/12/24
+date: 2018/01/01
 categories:
   - [수학 퍼즐]
 authors:

@@ -1,7 +1,7 @@
 ---
 
 title: 17학번의 1학기 소감
-date: 2017/10/13
+date: 2017/06/28
 categories:
   - [기타]
 authors:

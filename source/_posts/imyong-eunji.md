@@ -1,6 +1,6 @@
 ---
 title: 임용을 마치고 나서.
-date: 2018/01/01
+date: 2018/01/02
 categories:
   - [진로]
 authors:

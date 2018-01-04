@@ -1,6 +1,6 @@
 ---
 title: 학생들의 오개념, 산술기하 부등식에서
-date: 2017/10/13
+date: 2017/10/24
 categories:
   - [수학 교실]
 authors:
