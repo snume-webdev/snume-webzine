@@ -1,6 +1,6 @@
 ---
 title: 데카르트와 차별
-date: 2017/10/13
+date: 2017/08/09
 categories:
   - [수학자 이야기]
 authors:

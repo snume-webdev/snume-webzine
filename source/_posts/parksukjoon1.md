@@ -1,6 +1,6 @@
 ---
 title: 배움중심의 수학교육 연구
-date: 2017/10/13
+date: 2017/08/02
 categories:
   - [수학 교실]
 authors:
