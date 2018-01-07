@@ -1,5 +1,5 @@
 .post-list__item
-  span.post-list__item__date= date(post.date, 'YYYY-M-D')
+  span.post-list__item__date= date(post.date, 'YYYY-MM-DD')
   a.post-list__item__title(href=url_for(post.path))
     span= post.title
     if post.authors
